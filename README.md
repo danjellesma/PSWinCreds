@@ -25,3 +25,9 @@ UserName           		Password
 \serviceaccountname		System.Security.SecureString
 ```
 
+##### When might you use this? 
+
+I needed to have a scheduled task run a series of scripts against a VMware Environment via the PowerCLI pack. In order to use a service account, I created credential file via the library above, and then include the library with my scripts. Now when connecting to vCenter, the service account is used. 
+
+##### Notes
+* Credential files will only work on the computer they were created on. You cannot move the XML file to another machine, as it cannot be decrypted. 
