@@ -12,9 +12,9 @@ Include the library with your script
 . "C:\PSWinCreds\library.ps1"
 ```
 
-Set credentials using the Set-WinCreds method, which will pop up a dialog prompting for a Username and Password.
+Create a credentials file using the New-WinCreds Cmdlet, which will pop up a dialog prompting for a Username and Password.
 ```powershell
-Set-WinCreds serviceaccountname
+New-WinCreds serviceaccountname
 ```
 
 You can save the result of Get-WinCreds to a varaible to be used in your script later.
